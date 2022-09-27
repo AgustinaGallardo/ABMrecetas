@@ -12,15 +12,15 @@ namespace RecetasSLN.dominio
         public string Nombre { get; set; }
         public TipoReceta TipoReceta { get; set; }
 
-        public string Chef { get; set; }
+        public string Cheff { get; set; }
         public List<DetalleReceta> Detalles { get; set; }
 
-        public Receta(int recetaNro, string nombre, TipoReceta tipoReceta, string chef, List<DetalleReceta> detalles)
+        public Receta(int recetaNro, string nombre, TipoReceta tipoReceta, string cheff, List<DetalleReceta> detalles)
         {
             RecetaNro = recetaNro;
             Nombre = nombre;
             TipoReceta = tipoReceta;
-            Chef = chef;
+            Cheff = cheff;
             Detalles = detalles;
         }
 
@@ -29,8 +29,24 @@ namespace RecetasSLN.dominio
             RecetaNro = 0;
             Nombre = string.Empty;
             TipoReceta = null;
-            Chef = string.Empty;
+            Cheff = string.Empty;
             Detalles = new List<DetalleReceta>();
+        }
+
+        public int CalcularIngredientes()
+        {
+            int cantidad = 0;
+            foreach(DetalleReceta item in Detalles)
+            {
+                cantidad += item.Cantidad;               
+            }
+            return cantidad;
+        }
+
+        public void AgregarDetalle(DetalleReceta detalle)
+        {
+            Detalles.Add(detalle);
+
         }
 
     }
