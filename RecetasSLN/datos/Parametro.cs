@@ -13,8 +13,8 @@ namespace RecetasSLN.datos
 
         public Parametro(string clave,object valor)
         {
-            this.Clave = Clave;
-            this.Valor = valor;
+            Clave = clave;
+            Valor = valor;
         }
     }
 }

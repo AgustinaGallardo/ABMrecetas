@@ -51,6 +51,13 @@
     <Compile Include="dominio\DetalleReceta.cs" />
     <Compile Include="dominio\Ingrediente.cs" />
     <Compile Include="dominio\Receta.cs" />
+    <Compile Include="dominio\TipoReceta.cs" />
+    <Compile Include="presentación\AltaReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentación\AltaReceta.Designer.cs">
+      <DependentUpon>AltaReceta.cs</DependentUpon>
+    </Compile>
     <Compile Include="presentación\FrmConsultarRecetas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +70,9 @@
     <Compile Include="datos\Intefaz\IDaoReceta.cs" />
     <Compile Include="Servicios\Implementacion\Servicio.cs" />
     <Compile Include="Servicios\Interfaz\iServicio.cs" />
+    <EmbeddedResource Include="presentación\AltaReceta.resx">
+      <DependentUpon>AltaReceta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="presentación\FrmConsultarRecetas.resx">
       <DependentUpon>FrmConsultarRecetas.cs</DependentUpon>
     </EmbeddedResource>

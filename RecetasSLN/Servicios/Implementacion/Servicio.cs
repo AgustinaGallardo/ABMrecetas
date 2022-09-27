@@ -1,4 +1,5 @@
-﻿using RecetasSLN.Servicios.Interfaz;
+﻿using RecetasSLN.dominio;
+using RecetasSLN.Servicios.Interfaz;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,20 +8,28 @@ using System.Threading.Tasks;
 
 namespace RecetasSLN.Servicios.Implementacion
 {
-    internal class Servicio
+     class Servicio : iServicio
     {
         private IDaoReceta dao;
        
-            public Servicio()
+        public Servicio()
         {
-            dao= new RecetaDao();
+            dao = new RecetaDao();
         }
+
+        public List<Ingrediente> ObtenerIngredientes()
+        {
+            return dao.ObtenerIngredientes();
+        }
+
         public int ObtenerProximo()
         {
             return dao.ObtenerProximo();
         }
 
-
-
+        public List<TipoReceta>ObtenerTipos()
+        {
+           return dao.ObtenerTipos();
+        }
     }
 }

@@ -10,27 +10,28 @@ namespace RecetasSLN.dominio
     {
         public int RecetaNro { get; set; }
         public string Nombre { get; set; }
-        public int TipoReceta { get; set; }
-        public string Cheff { get; set; }
-       public List<DetalleReceta> Detalles { get; set; }
+        public TipoReceta TipoReceta { get; set; }
 
-        public Receta (int recetaNro,string nombre,int tipoReceta,string cheff,List<DetalleReceta> detalles)
+        public string Chef { get; set; }
+        public List<DetalleReceta> Detalles { get; set; }
+
+        public Receta(int recetaNro, string nombre, TipoReceta tipoReceta, string chef, List<DetalleReceta> detalles)
         {
             RecetaNro = recetaNro;
             Nombre = nombre;
             TipoReceta = tipoReceta;
-            Cheff = cheff;
+            Chef = chef;
             Detalles = detalles;
-            
         }
+
         public Receta()
         {
-            this.RecetaNro = 0;
-            this.TipoReceta= 0;
-            this.TipoReceta=0;
-            this.Cheff ="";
+            RecetaNro = 0;
+            Nombre = string.Empty;
+            TipoReceta = null;
+            Chef = string.Empty;
             Detalles = new List<DetalleReceta>();
         }
-        
+
     }
 }

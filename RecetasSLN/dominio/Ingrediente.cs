@@ -12,18 +12,18 @@ namespace RecetasSLN.dominio
         public string Nombre { get; set; }
         public string Unidad { get; set; }
 
-        public Ingrediente(int ingredienteId , string nombre, string unidad)
+        public Ingrediente(int ingredienteId , string nombre)
         {
-            this.IngredienteId = ingredienteId;
-            this.Nombre = nombre;
-            this. Unidad = unidad;
+            IngredienteId = ingredienteId;
+            Nombre = nombre;
+            
         }
-
+     
         public Ingrediente()
         {
-           this.IngredienteId = 0;
-           this.Nombre ="";
-           this.Unidad="";
+           IngredienteId = 0;
+           Nombre ="";
+           Unidad="";
         }
         public override string ToString()
         {

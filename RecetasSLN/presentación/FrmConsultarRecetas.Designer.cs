@@ -30,6 +30,8 @@ namespace RecetasSLN.presentación
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,6 +53,8 @@ namespace RecetasSLN.presentación
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnConsultar);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label2);
@@ -58,14 +62,30 @@ namespace RecetasSLN.presentación
             this.groupBox1.Controls.Add(this.cboTipoReceta);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(578, 93);
+            this.groupBox1.Size = new System.Drawing.Size(578, 115);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros:";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(104, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(279, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(51, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Cheff";
+            // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(390, 53);
+            this.btnConsultar.Location = new System.Drawing.Point(451, 86);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(111, 23);
             this.btnConsultar.TabIndex = 4;
@@ -82,7 +102,7 @@ namespace RecetasSLN.presentación
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 60);
+            this.label2.Location = new System.Drawing.Point(36, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 2;
@@ -91,16 +111,16 @@ namespace RecetasSLN.presentación
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 27);
+            this.label1.Location = new System.Drawing.Point(18, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tipo de receta:";
+            this.label1.Text = "Tipo Receta";
             // 
             // cboTipoReceta
             // 
             this.cboTipoReceta.FormattingEnabled = true;
-            this.cboTipoReceta.Location = new System.Drawing.Point(104, 24);
+            this.cboTipoReceta.Location = new System.Drawing.Point(104, 84);
             this.cboTipoReceta.Name = "cboTipoReceta";
             this.cboTipoReceta.Size = new System.Drawing.Size(176, 21);
             this.cboTipoReceta.TabIndex = 0;
@@ -109,9 +129,9 @@ namespace RecetasSLN.presentación
             // 
             this.groupBox2.Controls.Add(this.lblTotal);
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 112);
+            this.groupBox2.Location = new System.Drawing.Point(12, 133);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(577, 232);
+            this.groupBox2.Size = new System.Drawing.Size(625, 258);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados:";
@@ -119,11 +139,12 @@ namespace RecetasSLN.presentación
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(431, 207);
+            this.lblTotal.Location = new System.Drawing.Point(314, 227);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(87, 13);
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Total de recetas:";
+            this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // dataGridView1
             // 
@@ -135,7 +156,7 @@ namespace RecetasSLN.presentación
             this.colTipo,
             this.colCheff,
             this.colBorrar});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 29);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 45);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(479, 165);
@@ -169,7 +190,7 @@ namespace RecetasSLN.presentación
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(488, 364);
+            this.btnSalir.Location = new System.Drawing.Point(494, 423);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(91, 23);
             this.btnSalir.TabIndex = 5;
@@ -178,24 +199,26 @@ namespace RecetasSLN.presentación
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(13, 364);
+            this.btnNuevo.Location = new System.Drawing.Point(19, 423);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(91, 23);
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "Nueva Receta";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // FrmConsultarRecetas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 399);
+            this.ClientSize = new System.Drawing.Size(658, 458);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultarRecetas";
             this.Text = "Consultar recetas";
+            this.Load += new System.EventHandler(this.FrmConsultarRecetas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -222,5 +245,7 @@ namespace RecetasSLN.presentación
         private System.Windows.Forms.DataGridViewButtonColumn colBorrar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
