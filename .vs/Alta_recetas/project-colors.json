@@ -5,7 +5,17 @@
       "ProjectGuid": "e2941db5-7871-4b79-92f5-339842defc04",
       "DisplayName": "RecetasSLN",
       "ColorIndex": 0
+    },
+    "74725cd6-f76e-4565-8144-0a2ff6a4f2d3": {
+      "ProjectGuid": "74725cd6-f76e-4565-8144-0a2ff6a4f2d3",
+      "DisplayName": "RecetaBack",
+      "ColorIndex": 1
+    },
+    "7c365126-dcaf-4ea6-96f7-12e6a88abf21": {
+      "ProjectGuid": "7c365126-dcaf-4ea6-96f7-12e6a88abf21",
+      "DisplayName": "RecetasWebAPI",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

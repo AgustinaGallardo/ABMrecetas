@@ -1,0 +1,12 @@
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\bin\Debug\net6.0\RecetaBack.deps.json
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\bin\Debug\net6.0\RecetaBack.dll
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\bin\Debug\net6.0\ref\RecetaBack.dll
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\bin\Debug\net6.0\RecetaBack.pdb
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.csproj.AssemblyReference.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.AssemblyInfoInputs.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.AssemblyInfo.cs
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.csproj.CoreCompileInputs.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.dll
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\ref\RecetaBack.dll
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\Alta_recetas\RecetaBack\obj\Debug\net6.0\RecetaBack.pdb

@@ -1,11 +1,11 @@
-﻿using RecetasSLN.presentación;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RecetasSLN
+namespace RecetaBack
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace RecetasSLN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmConsultarRecetas());
+           // Application.Run(new FrmConsultarRecetas());
         }
     }
 }
